@@ -1,0 +1,5 @@
+package com.locdang.runnerz.run;
+
+public record Run() {
+
+}
