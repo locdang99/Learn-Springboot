@@ -1,7 +1,0 @@
-package foo.bar;
-
-public class WelcomeMessage {
-	public String getWelcomeMessage() {
-		return "Wel come to the Spring Boot Application!";
-	}
-}
