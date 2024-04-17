@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Bean;
 
 import com.locdang.runnerz.run.Location;
 import com.locdang.runnerz.run.Run;
-import com.locdang.runnerz.run.RunRepository;
+import com.locdang.runnerz.run.JdbcClientRunRepository;
 
 //import foo.bar.WelcomeMessage;
 
