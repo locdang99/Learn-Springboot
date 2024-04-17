@@ -13,6 +13,7 @@ import org.springframework.context.annotation.Bean;
 
 import com.locdang.runnerz.run.Location;
 import com.locdang.runnerz.run.Run;
+import com.locdang.runnerz.run.RunRepository;
 
 //import foo.bar.WelcomeMessage;
 
@@ -35,13 +36,13 @@ public class Application {
 		log.info("Application started successfully with Roger(Loc) Dang!");
 	}
 
-	@Bean
-	CommandLineRunner runner() {
-		return args -> {
-			Run run = new Run(1, "First Run", LocalDateTime.now(), LocalDateTime.now().plus(1, ChronoUnit.HOURS), 5,
-					Location.OUTDOOR);
-			log.info("Run" + run);
-		};
-	}
+//	@Bean
+//	CommandLineRunner runner(RunRepository runRepository) {
+//		return args -> {
+//			Run run = new Run(1, "First Run", LocalDateTime.now(), LocalDateTime.now().plus(1, ChronoUnit.HOURS), 5,
+//					Location.OUTDOOR);	
+//			runRepository.create(run);
+//		};
+//	}
 
 }
